@@ -1,6 +1,14 @@
 # react-redux-meteor
 A demo for using meteor (only) as your backend and react-redux as your frontend
 
+## Features
+
+- React & Redux Frontend without any restrictions (no Meteor in the frontend)
+- live data "for free" with the Meteor backend
+- optimistic UI
+- webpack
+- [Asteroid](https://github.com/mondora/asteroid) as DDP library
+
 ## How to run
 
 This app consists of a client and a server, we need to start both separately. This might sound trivial to you if you don't come from meteor 😉.
