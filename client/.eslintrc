@@ -1,0 +1,18 @@
+{
+  "env": {
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "extends": "airbnb",
+  "plugins": ["react"],
+  "rules": {
+    semi: ["error", "never"]
+  }
+}
