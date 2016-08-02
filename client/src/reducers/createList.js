@@ -4,14 +4,15 @@ import unique from 'lodash/uniq'
 const createList = (filter) => {
   const handleToggle = (state, action) => {
     const { response: { doc } } = action
-    const { completed, id } = doc
+    const { completed, id: toggleId } = doc
     const shouldRemove = (
       (completed && filter === 'active') ||
       (!completed && filter === 'completed')
     )
     return shouldRemove
-      ? state.filter(t => t.id !== id)
-      : state
+      ? state.filter(id => id !== toggleId)
+      // otherwise add if not added yet
+      : unique([...state, toggleId])
   }
 
   const ids = (state = [], action) => {
