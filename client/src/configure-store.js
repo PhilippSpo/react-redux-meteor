@@ -3,6 +3,7 @@ import createLogger from 'redux-logger'
 import reducers from './reducers/'
 import thunk from 'redux-thunk'
 import asteroid from './configure-asteroid'
+import initializeListeners from './action-creators/asteroid'
 
 const configureStore = () => {
   const middlewares = [thunk.withExtraArgument(asteroid)]
@@ -16,32 +17,7 @@ const configureStore = () => {
     applyMiddleware(...middlewares)
   )
 
-  asteroid.ddp.on('added', ({ collection, fields, id }) => {
-    if (collection === 'todos') {
-      store.dispatch({
-        type: 'DDP_ADDED',
-        response: { collection, doc: { id, ...fields } },
-      })
-    }
-  })
-
-  asteroid.ddp.on('changed', ({ collection, fields, id }) => {
-    if (collection === 'todos') {
-      store.dispatch({
-        type: 'DDP_CHANGED',
-        response: { collection, doc: { id, ...fields } },
-      })
-    }
-  })
-
-  asteroid.ddp.on('removed', ({ collection, id }) => {
-    if (collection === 'todos') {
-      store.dispatch({
-        type: 'DDP_REMOVED',
-        response: { collection, id },
-      })
-    }
-  })
+  initializeListeners(store.dispatch, asteroid)
 
   return store
 }

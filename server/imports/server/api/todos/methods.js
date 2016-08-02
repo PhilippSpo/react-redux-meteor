@@ -7,7 +7,7 @@ Meteor.methods({
     // Meteor._sleepForMs(2000)
 
     // simulate add todo error
-    throw Error('NOT ALLOWED!!!')
+    // throw Error('NOT ALLOWED!!!')
     const todoId = Todos.insert({ _id, text })
     return Todos.findOne(todoId)
   },
@@ -16,7 +16,7 @@ Meteor.methods({
     // Meteor._sleepForMs(2000)
 
     // simulate toggle todo error
-    throw Error('NOT ALLOWED!!!')
+    // throw Error('NOT ALLOWED!!!')
     const todo = Todos.findOne(_id)
     Todos.update(_id, { $set: { completed: !todo.completed } })
   }

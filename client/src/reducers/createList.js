@@ -17,9 +17,11 @@ const createList = (filter) => {
   const ids = (state = [], action) => {
     switch (action.type) {
       case 'DDP_ADDED':
-        return filter !== 'completed' ?
-          unique([...state, action.response.doc.id])
-          : state
+        return (
+          filter === 'all' ||
+          (filter === 'active' && action.response.doc.completed === false) ||
+          (filter === 'completed' && action.response.doc.completed === true)
+        ) ? unique([...state, action.response.doc.id]) : state
       case 'DDP_REMOVED':
         return state.filter(id => id !== action.response.id)
       case 'DDP_CHANGED':
