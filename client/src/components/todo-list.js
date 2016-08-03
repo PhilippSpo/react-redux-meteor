@@ -2,7 +2,7 @@ import React, { PropTypes, Component } from 'react'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router'
 import Todo from './todo'
-import * as actions from '../action-creators'
+import * as actions from '../actions'
 import { getVisibleTodos, getIsFetching, getErrorMessage } from '../reducers/'
 import FetchError from './fetch-error'
 

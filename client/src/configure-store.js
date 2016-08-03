@@ -3,7 +3,7 @@ import createLogger from 'redux-logger'
 import reducers from './reducers/'
 import thunk from 'redux-thunk'
 import asteroid from './configure-asteroid'
-import initializeListeners from './action-creators/asteroid'
+import initializeListeners from './actions/asteroid'
 
 const configureStore = () => {
   const middlewares = [thunk.withExtraArgument(asteroid)]
