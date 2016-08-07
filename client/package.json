@@ -23,9 +23,9 @@
   "author": "Philipp Sporrer <philipp.sporrer@commercetools.de>",
   "license": "MIT",
   "devDependencies": {
-    "babel-core": "6.11.4",
+    "babel-core": "6.13.2",
     "babel-loader": "6.2.4",
-    "babel-preset-es2015-webpack": "6.4.2",
+    "babel-preset-es2015": "6.13.2",
     "babel-preset-react": "6.11.1",
     "babel-preset-stage-2": "6.11.0",
     "cpy-cli": "1.0.1",
