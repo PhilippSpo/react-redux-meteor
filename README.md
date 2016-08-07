@@ -1,6 +1,6 @@
 # react-redux-meteor
 
-A demo for using meteor (only) as your backend and react-redux as your frontend.
+A demo for using meteor (only) as your backend and react-redux as your frontend.  
 I also wrote a [blog post]() about this setup, which explains the setps you need to take to make your react-redux app real-time by connecting it to a meteor backend.
 
 ## Features
