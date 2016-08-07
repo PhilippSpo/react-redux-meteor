@@ -9,7 +9,7 @@ The starting point for this example was the Todos App from Dan Abramov's ["Build
 ## Features
 
 - React & Redux Frontend without any restrictions (no Meteor in the frontend)
-- live data "for free" with the Meteor backend
+- live data *"for free"* by using a Meteor backend
 - optimistic UI
 - webpack (even in version 2.0 with tree-shaking enabled 🎉)
 - [Asteroid](https://github.com/mondora/asteroid) as DDP library
