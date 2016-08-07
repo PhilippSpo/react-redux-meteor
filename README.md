@@ -20,7 +20,7 @@ This app consists of a client and a server, we need to start both separately. Th
 
 ### Starting the client
 
-This will start your a `webpack-dev-server` so you can access your frontend at http://localhost:8080
+This will start your a `webpack-dev-server` so you can access your frontend at `http://localhost:8080`
 ```sh
 cd client
 npm i
