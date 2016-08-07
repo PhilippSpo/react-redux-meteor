@@ -11,7 +11,7 @@ The starting point for this example was the Todos App from Dan Abramov's ["Build
 - React & Redux Frontend without any restrictions (no Meteor in the frontend)
 - live data "for free" with the Meteor backend
 - optimistic UI
-- webpack
+- webpack (even in version 2.0 with tree-shaking enabled 🎉)
 - [Asteroid](https://github.com/mondora/asteroid) as DDP library
 
 ## How to run
