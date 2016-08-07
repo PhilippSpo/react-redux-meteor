@@ -1,5 +1,7 @@
 # react-redux-meteor
-A demo for using meteor (only) as your backend and react-redux as your frontend
+
+A demo for using meteor (only) as your backend and react-redux as your frontend.
+I also wrote a [blog post]() about this setup, which explains the setps you need to take to make your react-redux app real-time by connecting it to a meteor backend.
 
 ## Features
 
@@ -28,4 +30,8 @@ To start the meteor backend you first need to install meteor if you haven't alre
 ```sh
 curl https://install.meteor.com/ | sh
 ```
-Then you can start your backend by simply running the `meteor` command
+Then you can start your backend by simply running
+```sh
+cd server
+meteor
+```
