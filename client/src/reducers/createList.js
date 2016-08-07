@@ -40,7 +40,7 @@ const createList = (filter) => {
       case 'FETCH_TODOS_REQUEST':
         return true
       case 'FETCH_TODOS_SUCCESS':
-      case 'FETCH_TODOS_FAILIURE':
+      case 'FETCH_TODOS_FAILURE':
         return false
       default:
         return state
@@ -52,7 +52,7 @@ const createList = (filter) => {
       return state
     }
     switch (action.type) {
-      case 'FETCH_TODOS_FAILIURE':
+      case 'FETCH_TODOS_FAILURE':
         return action.message
       case 'FETCH_TODOS_REQUEST':
       case 'FETCH_TODOS_SUCCESS':

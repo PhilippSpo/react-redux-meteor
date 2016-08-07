@@ -22,7 +22,7 @@ export const fetchTodos = (filter) => (dispatch, getState, asteroid) => {
     .on('error', error => {
       reject(error)
       dispatch({
-        type: 'FETCH_TODOS_FAILIURE',
+        type: 'FETCH_TODOS_FAILURE',
         filter,
         message: error.message || 'Something went wrong',
       })

@@ -7,19 +7,19 @@ const Footer = () => (
     <FilterLink
       filter="all"
     >
-      All
+      {'All'}
     </FilterLink>
     {' '}
     <FilterLink
       filter="active"
     >
-      Active
+      {'Active'}
     </FilterLink>
     {' '}
     <FilterLink
       filter="completed"
     >
-      Completed
+      {'Completed'}
     </FilterLink>
   </div>
 )

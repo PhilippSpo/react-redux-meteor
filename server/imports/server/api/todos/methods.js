@@ -4,7 +4,7 @@ import Todos from './todos'
 Meteor.methods({
   addTodo(_id, text) {
     // simulate slow server
-    // Meteor._sleepForMs(2000)
+    Meteor._sleepForMs(1000)
 
     // simulate add todo error
     // throw Error('NOT ALLOWED!!!')
@@ -13,7 +13,7 @@ Meteor.methods({
   },
   toggleTodo(_id) {
     // simulate slow server
-    // Meteor._sleepForMs(2000)
+    Meteor._sleepForMs(1000)
 
     // simulate toggle todo error
     // throw Error('NOT ALLOWED!!!')

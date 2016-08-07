@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 import TodoList from './todo-list'
 import Footer from './footer'
 import AddTodo from './add-todo'
@@ -10,9 +10,5 @@ const TodoApp = () => (
     <Footer />
   </div>
 )
-
-TodoApp.propTypes = {
-  params: PropTypes.object.isRequired,
-}
 
 export default TodoApp
