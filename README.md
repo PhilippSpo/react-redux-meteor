@@ -2,7 +2,7 @@
 
 A demo for using meteor (only) as your backend and react-redux as your frontend.
 
-I wrote a [blog post]() about this setup, which explains the setps you need to take to make your react-redux app real-time by connecting it to a meteor backend.
+I wrote a [blog post](https://blog.backlogapp.io/building-real-time-react-applications-with-redux-and-meteor-de29042eb460?gi=e166269ad5bb#.z8j0khk59) about this setup, which explains the setps you need to take to make your react-redux app real-time by connecting it to a meteor backend.
 
 The starting point for this example was the Todos App from Dan Abramov's ["Building React Applications with Idiomatic Redux"](https://egghead.io/courses/building-react-applications-with-idiomatic-redux) course ([Source code here](https://github.com/gaearon/todos)). If you are not sure how Redux works, watch the egghead.io courses first 🤓
 
